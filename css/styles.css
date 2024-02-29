@@ -32,19 +32,7 @@ h1{
 
 
 
-/* Estilos para a div que envolve o conteúdo */
 
-
-/* Estilos para o corpo da página */
-/* body {
-  background-image: url("./calc.gif");
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin: 0;
-  font-size: 16px;
-} */
-
-/* Estilos para a calculadora */
 .calculator {
   width: 400px;
   padding: .5em;
@@ -64,7 +52,8 @@ h1{
   color: #000;
   display: flex;
   flex-direction: column;
-  margin: auto;
+  margin: 2px auto;
+ 
   
 }
 
@@ -105,30 +94,6 @@ h3 {
   background-color: #1b7269;
 }
 
-/* Efeito de hover para o botão "AC" */
-#clear:hover {
-  background-color: #228f84;
-}
-
-/* Estilos para botões especiais (+, -, *, /) */
-#especial {
-  background-color: #228f84;
-}
-
-/* Efeito de hover para botões especiais */
-#especial:hover {
-  background-color: #18646b;
-}
-
-/* Estilos para o botão "=" (igual) */
-#igual {
-  background-color: #1b7269;
-}
-
-/* Efeito de hover para o botão "=" */
-#igual:hover {
-  background-color: #25968a;
-} 
 
 /* Estilos para o visor da calculadora */
 .display {
@@ -144,12 +109,11 @@ h3 {
 
 /* Estilos para o visor da calculadora com ID "display" */
 #display {
-  height: 90px;
+  height: 70px;
   color: rgb(39, 39, 39);
   text-align: center;
   font-size: 35px;
-  word-wrap: break-word;
-  border-bottom: 1px solid #25968a;
+  word-wrap: break-word; 
   background: #d8d8d8;
   width: 100%;
   margin-bottom: 226px;
@@ -196,7 +160,7 @@ h3 {
   border: 1px solid white;
   max-height: 13.7rem;
   max-width: 92rem ;
-  height: 900.4em;
+  height: 300.4em;
   overflow-y: auto;
   margin-top: 10px;
   
@@ -227,9 +191,9 @@ h3 {
   cursor: pointer;
  font-weight: bold;
   border: 1px solid black;
-  width: 100%;
+  width: 150px;
   height: 55px;
-  margin-top: 0px;
+ margin: 5px;
 }
 
 .clear-button:hover,
@@ -238,13 +202,9 @@ h3 {
 }
 
 /* Estilos para ícones nos botões */
-.icon,
-.icon1 {
-  max-width: 25px;
-  max-height: 20px;
-  border-radius: 3px;
-  border: 1px solid black;
-  margin-top: -6px;
+.botoes{
+  display: flex;
+  margin: 0 auto;
 }
 
 /* Estilos responsivos para telas menores */

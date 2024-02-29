@@ -15,7 +15,35 @@
   <div class="conteudo">
     
     <div class="calculator">
-      <h1>Calculadora</h1>
+    
+      <div class="history">
+        <h5>Histórico</h5><br> <!-- Título "History" e uma quebra de linha. -->
+  
+        <!-- Cria um contêiner flexível para organizar os cabeçalhos. -->
+        <div class="flex-container">
+          <h5>OPERAÇÃO</h5>
+          <h5>RESULTADO</h5>
+          <h5>DATA</h5>
+        </div>
+  
+        <!-- Cria um contêiner para listar o histórico com o ID "history-list". -->
+        <div class="historico" id="history-list"></div>
+        <div class="botoes">
+        <div class="center-button"> <!-- Cria um contêiner com a classe "center-button". -->
+          <button class="clear-button" id="clear-history-button" onclick="clearHistory()">
+            <!-- Cria um botão "Delete History" com a classe "clear-button" e uma função "clearHistory()" quando clicado. -->
+            Delete Histórico
+          </button>
+        </div>
+  
+        <!-- Cria um segundo contêiner com a classe "center-button". -->
+        <div class="center-button">
+          <button class="save-button" id="save-history-button" onclick="saveHistoryToFile()"> Save
+            Histórico</button><!-- Cria um botão "Save History" com a classe "save-button" e uma função "saveHistoryToFile()" quando clicado. -->
+        </div>
+  </div>
+      </div>
+  
       <div class="display">
         <input type="text" id="display" readonly>
         <!-- Cria um campo de entrada de texto somente leitura com o ID "display". -->
@@ -58,34 +86,7 @@
     </div>
 
     <!-- Cria um contêiner com a classe "history" para o histórico de operações. -->
-    <div class="history">
-      <h5>Histórico</h5><br> <!-- Título "History" e uma quebra de linha. -->
-
-      <!-- Cria um contêiner flexível para organizar os cabeçalhos. -->
-      <div class="flex-container">
-        <h5>OPERAÇÃO</h5>
-        <h5>RESULTADO</h5>
-        <h5>DATA</h5>
-      </div>
-
-      <!-- Cria um contêiner para listar o histórico com o ID "history-list". -->
-      <div class="historico" id="history-list"></div>
-
-      <div class="center-button"> <!-- Cria um contêiner com a classe "center-button". -->
-        <button class="clear-button" id="clear-history-button" onclick="clearHistory()">
-          <!-- Cria um botão "Delete History" com a classe "clear-button" e uma função "clearHistory()" quando clicado. -->
-          Delete Histórico
-        </button>
-      </div>
-
-      <!-- Cria um segundo contêiner com a classe "center-button". -->
-      <div class="center-button">
-        <button class="save-button" id="save-history-button" onclick="saveHistoryToFile()"> Save
-          Histórico</button><!-- Cria um botão "Save History" com a classe "save-button" e uma função "saveHistoryToFile()" quando clicado. -->
-      </div>
-
-    </div>
-
+   
     <script src="js/script.js" defer></script>
 </body>
 
