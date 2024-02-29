@@ -43,6 +43,7 @@ h1{
   display: flex;
   flex-direction: column;
   margin: 10px;
+  height: 820px;
  
   
 }
@@ -101,7 +102,7 @@ h3 {
 
 /* Estilos para o visor da calculadora */
 .display {
-  height: 100px;
+  height: 80px;
   color: #dfdfdf;
   text-align: center;
   font-size: 35px;
